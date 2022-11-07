@@ -1,0 +1,551 @@
+@import '~antd/dist/antd.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    color: #222;
+    background-image: url(../asset/bg2.jpg);
+    background-position: -10px 0;
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+    background-color: #ffffff;
+}
+
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 55px;
+    background-color: rgb(244, 244, 244, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+h1 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3 {
+    margin-bottom: 5px;
+    width: 135px;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logo {
+    margin-top: 12px;
+    float: left;
+    width: 54px;
+    height: 28.5px;
+    background-image: url(../asset/zju.jpeg);
+    background-size: 54px 28.5px;
+}
+
+.webname {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.account {
+    margin-top: 18px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.id {
+    margin-top: 18px;
+}
+
+.register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 500px;
+    height: 350px;
+    background-color: rgb(240, 240, 240, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20.5px;
+    backdrop-filter: blur(12.5px);
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.1);
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.connect {
+    display: block;
+    margin: 50px auto;
+    width: 350px;
+    height: 70px;
+    font-size: 23px;
+    font-weight: 500;
+    background-image: linear-gradient(30deg, rgb(195, 233, 245), rgb(196, 215, 248));
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    box-shadow: 0px 6px 12px rgba(195, 233, 245, 0.5);
+}
+
+.head {
+    float:right;
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    background-image: url(../asset/header.png);
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.crown {
+    float: right;
+    font-size: 25px;
+    transform: translateX(60px) translateY(-15px) rotate(28deg);
+}
+
+.status {
+    position: relative;
+    height: 269px;
+    z-index: 1;
+    border-radius: 20.5px;
+    background-color: rgb(244, 244, 244, 0.5);
+    backdrop-filter: blur(12.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.substatus {
+    float: left;
+    margin-top: 38px;
+    margin-left: 33px;
+    width: 165px;
+    height: 193px;
+    z-index: 2;
+    background-image: linear-gradient(-45deg, rgb(208, 213, 252), rgb(189, 214, 241));
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 5px 15px rgba(178, 201, 255, 0.35);
+}
+
+.num {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.unit {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.illustration {
+    position: absolute;
+    top: -15px;
+    right: 45px;
+    width: 305px;
+    height: 305px;
+    background-image: url(../asset/image.png);
+    background-size: 305px 305px;
+}
+
+.main {
+    position: relative;
+    margin-top: 35px;
+    height: 300px;
+}
+
+.emptylist {
+    width: 700px;
+    height: 324px;
+    padding-top: 230px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20.5px;
+    background-color: rgb(244, 244, 244, 0.5);
+    background-image: url(../asset/no_proposal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(12.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.prolist {
+    width: 742px;
+    height: 324px;
+    font-size: 13px;
+    overflow-y: scroll;
+}
+
+.prolist::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    color: #000000;
+}
+
+.prolist::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.prolist::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.proposal {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 152px;
+    background-color: rgb(240, 240, 240, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    backdrop-filter: blur(12.5px);
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.1);
+}
+
+.frame {
+    position: relative;
+    margin: 20px auto;
+    width: 180px;
+    height: 130px;
+}
+
+.prostate {
+    position: absolute;
+    right: -5px;
+    top: 4px;
+    width: 40px;
+    height: 18px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.procontent {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.scroll {
+    position: absolute;
+    left: 730px;
+    z-index: -1;
+    width: 12px;
+    height: 324px;
+    background-color: rgb(230, 230, 230, 0.4);
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.button {
+    margin-bottom: 12px;
+    width: 230px;
+    height: 100px;
+    background-color: rgb(240, 240, 240, 0.5);
+    border-radius: 20.5px;
+    backdrop-filter: blur(12.5px);
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.1);
+}
+
+.points {
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 14px;
+    width: 45px;
+    height: 45px;
+    background-image: url(../asset/points.png);
+    background-size: cover;
+}
+
+.new {
+    float: left;
+    margin-top: 32px;
+    margin-left: 25px;
+    margin-right: 15px;
+    width: 43px;
+    height: 43px;
+    background-image: url(../asset/new.png);
+    background-size: cover;
+}
+
+.rule {
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 14px;
+    width: 45px;
+    height: 45px;
+    background-image: url(../asset/gift.png);
+    background-size: cover;
+}
+
+.option {
+    float: left;
+    margin-top: 35px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modal1 .ant-modal-content {
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 20.5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12.5px);
+}
+
+.modal1 .ant-modal-body {
+    height: 470px;
+}
+
+.input { 
+    background-color: rgb(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    border-radius: 7px;
+    backdrop-filter: blur(12.5px);
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.08);
+}
+
+.input:focus {
+    border: 2px solid rgb(196, 215, 248);
+    outline: none;
+}
+
+.modalTitle {
+    margin-left: 20px;
+    width: 575px;
+    font-size: 25px;
+    font-weight: 700;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modalItem {
+    display: inline-block;
+    margin-left: 20px;
+    width: 190px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.proposalName {
+    padding: 15px;
+    width: 410px;
+    height: 40px;
+}
+
+.proposalProposer {
+    padding: 15px;
+    width: 410px;
+    height: 40px;
+}
+
+.proposalContent {
+    margin-left: 20px;
+    padding: 10px;
+    width: 600px;
+    height: 130px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.proposalDuration {
+    padding: 15px;
+    width: 410px;
+    height: 40px;
+}
+
+.modal2 .ant-modal-content {
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 20.5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12.5px);
+}
+
+.modal2 .ant-modal-body {
+    height: 490px;
+}
+
+.modal2 .modalItem {
+    width: auto;
+    font-weight: 700;
+}
+
+._proposalDisplayInfo {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+._proposalContent {
+    display: block;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 600px;
+    height: 130px;
+    resize: none;
+    background-color: rgb(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    backdrop-filter: blur(12.5px);
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.08);
+}
+
+._proposalContent:focus {
+    border: none;
+    outline: none;
+}
+
+.vote {
+    margin-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.support {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid rgba(116, 222, 164, 0.8);
+    background-image: linear-gradient(-30deg, rgb(116, 222, 164), rgb(48, 207, 121));
+    box-shadow: 0px 5px 13px rgba(48, 207, 121, 0.3)
+}
+
+.oppose {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid rgba(245, 176, 175, 0.8);
+    background-image: linear-gradient(-30deg, rgb(237, 115, 112), rgb(233, 96, 89));
+    box-shadow: 0px 5px 13px rgba(237, 115, 112, 0.3);   
+}
+
+.votes {
+    margin-top: 15px;
+    margin-left: 30px;
+    padding: 10px;
+    height: 50px;
+    width: 350px;
+}
+
+.votes:focus {
+    border: 2px solid rgb(204, 204, 204);
+    outline: none;  
+}
+
+.modal3 .ant-modal-content {
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 20.5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12.5px);
+}
+
+.modal3 .ant-modal-body {
+    height: 400px;
+}
+
+.souvinerTitle {
+    text-align: center;
+}
+
+.getSouviner {
+    display: block;
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 50px auto 30px;
+    background-image: linear-gradient(30deg, rgb(195, 233, 245), rgb(196, 215, 248));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    box-shadow: 0px 6px 12px rgba(170, 200, 209, 0.4);
+}
+
+
+.giveUp {
+    display: block;
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px auto;
+    background-image: linear-gradient(45deg, rgb(220, 220, 220), rgb(205, 205, 205));
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
